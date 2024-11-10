@@ -1,23 +1,71 @@
 /* Global Rules  ------------------------------------------------------------------------------------------------------------------------------- */
 
 .hidden {
-  display: none;
+display: none;
 }
 
 body,
 html {
-  font-family: "Josefin Sans", sans-serif;
-  color: rgba(80, 80, 80, 1);
-  line-height: 1;
+font-family: 'Josefin Slab';font-size: 18px;
+color: rgba(80, 80, 80, 1);
+line-height: 1;
 }
 
 #wrapper {
-  width: 412px;
-  margin: 0px auto;
-  margin-bottom: 0px;
+width: 412px;
+height: 8000px;
+margin: 0px auto;
+border-radius: 30px;
+border: 15px solid rgba(80, 80, 80, 1);
 }
 
 /* Header Rules -------------------------------------------------------------------------------------------------------------------------*/
+/*
+header {  
+  display: flex; 
+} 
+*/
+.menu-icon { 
+width: 30px;
+height: 23px; 
+display: flex; 
+flex-direction: column; 
+justify-content: space-between;
+cursor: pointer; 
+margin-left: 20px; 
+margin-top: 20px;
+}
+
+.line {
+height: 4px; 
+background-color: rgba(154, 32, 24, 1);
+} 
+    
+nav { 
+text-align: left;
+padding-left: 20px;
+} 
+
+nav ul { 
+list-style-type: none; 
+padding: 0; 
+}
+
+nav ul li { 
+padding: 12px 0; 
+border-bottom: 2px solid rgba(154, 32, 24, 1);
+width: 95%;
+} 
+      
+nav ul li a { 
+color: rgba(80, 80, 80, 1);
+text-decoration: none; 
+font-size: 20px; 
+font-weight:bolder;
+}
+
+
+
 
 
 /* Main Rules -------------------------------------------------------------------------------------------------------------------------*/
