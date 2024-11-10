@@ -16,15 +16,14 @@
 
   <body>
     <div id="wrapper">
-      <h1 class="hidden">This is couples Resort website</h1>
+      <h1 class="hidden">This is Couples Resort website</h1>
       <header> 
         <div class="menu-icon" onclick="toggleMenu()"> 
            <div class="line"></div>
            <div class="line"></div> 
            <div class="line"></div> 
         </div> 
-      </header> 
-      <nav id="mobile-menu" class="hidden"> 
+        <nav id="mobile-menu" class="hidden"> 
           <ul> 
              <li><a href="#home">Home</a></li>
              <li><a href="#rooms">Rooms</a></li>
@@ -34,12 +33,19 @@
              <li><a href="#reservations">Reservations</a></li>
           </ul> 
        </nav> 
-              <script> 
+       <script> 
                    function toggleMenu() { 
                    var menu = document.getElementById("mobile-menu"); 
                    menu.classList.toggle("hidden"); }
-               </script>
-
+        </script>
+         <div id="cr-style">
+               <img src="images/Logo.png" alt="logo" id="logo">
+               <h1>Couples Resort</h1>
+         </div>
+      </header> 
+      <main>
+        <img src="images/RoomsHero.jpg" alt="The Hero image in Room styles" class="image" >
+      </main>
     </div>
   </body>
 </html>
