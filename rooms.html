@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To The Couples Resort</title>
     <!--Josefin Sans Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!--Josefin Slab Font-->
     <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
 
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/grid.css">
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    
+</head>
+<body>
     <div id="wrapper">
-      <h1 class="hidden">This is Couples Resort website</h1>
-      <header> 
-        <div class="menu-icon" onclick="toggleMenu()"> 
-           <div class="line"></div>
-           <div class="line"></div> 
-           <div class="line"></div> 
-        </div> 
-        <nav id="mobile-menu" class="hidden"> 
-          <ul> 
-             <li><a href="#home">Home</a></li>
-             <li><a href="#rooms">Rooms</a></li>
-             <li><a href="#Packages">Packages</a></li>
-             <li><a href="#dining">Dining</a></li>
-             <li><a href="#spa">Spa Activities</a></li>
-             <li><a href="#reservations">Reservations</a></li>
-          </ul> 
-       </nav> 
-       <script> 
-                   function toggleMenu() { 
-                   var menu = document.getElementById("mobile-menu"); 
-                   menu.classList.toggle("hidden"); }
-        </script>
-         <div id="cr-style">
-               <img src="images/Logo.png" alt="logo" id="logo">
-               <h1>Couples Resort</h1>
-         </div>
-      </header> 
-      <main>
-        <img src="images/RoomsHero.jpg" alt="The Hero image in Room styles" class="image" >
-      </main>
+        <h1 class="hidden">This is Couples Resort website</h1>
+        <header>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="mobile-menu" class="hidden">
+                <ul>
+                    <li><a href="https://www.couplesresort.ca/index.php">Home</a></li>
+                    <li><a href="https://www.couplesresort.ca/accommodations.php">Rooms</a></li>
+                    <li><a href="https://www.couplesresort.ca/packages.php">Packages</a></li>
+                    <li><a href="https://www.couplesresort.ca/gourmet_dining.php">Dining</a></li>
+                    <li><a href="https://www.couplesresort.ca/spa.php">Spa Activities</a></li>
+                    <li><a href="https://www.pronto2.com/couplesresort/">Reservations</a></li>
+                </ul>
+            </nav>
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("mobile-menu");
+                    menu.classList.toggle("hidden");
+                }
+            </script>
+            <div id="cr-style">
+                <img src="images/Logo.png" alt="logo" id="logo">
+                <h1>Couples Resort</h1>
+            </div>
+        </header>
+        <main class="grid-container">
+              <button class="book-now-button col-start-3 col-end-5 ">Book Now</button>
+              <img class="image full-width-grid" src="images/RoomsHero.jpg" alt="The Hero image in Room styles">
+              <section class="box col-start-1 col-end-3">
+                    <h1 class="title-small">Couples Resort</h1> 
+                    <h2 class="title-large">Room Styles</h2> 
+              </section>
+
+        </main>
     </div>
-  </body>
+</body>
 </html>
