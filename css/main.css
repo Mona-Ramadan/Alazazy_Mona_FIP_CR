@@ -296,6 +296,47 @@ details img {
  font-size: 24px;
  }
 
+ #exotics-hero-con {
+  background: url(../images/rooms_04.jpg) no-repeat;
+  height: 230px;
+ }
+ 
+ #exotics-heading-box {
+   align-self: end;
+ }
+ 
+ #exotics-heading-box h3 {
+ font-size: 24px;
+ }
+
+
+ #chalets-hero-con {
+  background: url(../images/rooms_05.jpg) no-repeat;
+  height: 230px;
+ }
+ 
+ #chalets-heading-box {
+   align-self: end;
+ }
+ 
+ #chalets-heading-box h3 {
+ font-size: 24px;
+ }
+
+
+ #juniors-hero-con {
+  background: url(../images/rooms_05.jpg) no-repeat;
+  height: 230px;
+ }
+ 
+ #juniors-heading-box {
+   align-self: end;
+ }
+ 
+ #juniors-heading-box h3 {
+ font-size: 24px;
+ }
+
 /* 6. ---About & FAQ--- */
 
 
