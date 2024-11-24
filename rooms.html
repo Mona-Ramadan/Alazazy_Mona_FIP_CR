@@ -2,56 +2,285 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To The Couples Resort</title>
-    <!--Josefin Sans Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!--Josefin Slab Font-->
-    <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+      <!--Josefin Sans Font-->
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <!--Josefin Slab Font-->
+      <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Welcome to The Couples Resort</title>
 
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    
 </head>
-<body>
-    <div id="wrapper">
-        <h1 class="hidden">This is Couples Resort website</h1>
-        <header>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav id="mobile-menu" class="hidden">
-                <ul>
-                    <li><a href="https://www.couplesresort.ca/index.php">Home</a></li>
-                    <li><a href="https://www.couplesresort.ca/accommodations.php">Rooms</a></li>
-                    <li><a href="https://www.couplesresort.ca/packages.php">Packages</a></li>
-                    <li><a href="https://www.couplesresort.ca/gourmet_dining.php">Dining</a></li>
-                    <li><a href="https://www.couplesresort.ca/spa.php">Spa Activities</a></li>
-                    <li><a href="https://www.pronto2.com/couplesresort/">Reservations</a></li>
-                </ul>
-            </nav>
-            <script>
-                function toggleMenu() {
-                    var menu = document.getElementById("mobile-menu");
-                    menu.classList.toggle("hidden");
-                }
-            </script>
-            <div id="cr-style">
-                <img src="images/Logo.png" alt="logo" id="logo">
-                <h1>Couples Resort</h1>
-            </div>
-        </header>
-        <main class="grid-container">
-              <button class="book-now-button col-start-3 col-end-5 ">Book Now</button>
-              <img class="image full-width-grid" src="images/RoomsHero.jpg" alt="The Hero image in Room styles">
-              <section class="box col-start-1 col-end-3">
-                    <h1 class="title-small">Couples Resort</h1> 
-                    <h2 class="title-large">Room Styles</h2> 
-              </section>
+    <body id="mobile-outline">
+        <h1 class="hidden">Welcome to The Couples Resort</h1>
+        <!-- Main Nav -->         
+            <header class="grid-con" id="main-header">
+                <nav id="main-nav" class="col-span-full">
+                    <h2 class="hidden">Main Navigation</h2>
 
-        </main>
-    </div>
-</body>
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger">
+                    <img src="images/burger.svg" alt="hamburger menu icon">
+                    </label>
+
+                    <div id="burger-con">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a class = "selected" href="dining.html">Dining</a></li>
+                            <li><a href="#">Spa Activites</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="logo" class="col-span-full">
+                    <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+                </div>
+            </header>        
+        <!-- Main Hero -->
+        <section id="hero" class="grid-con">
+            <h2 class="hidden">Book a stay with us</h2>                       
+            <div id="book-now-hero" class="book-now col-start-3 col-span-2">
+                <p>Book Now</p>
+            </div>
+            <section id="hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2">
+                <span>Couples Resort</span><br> Room Styles
+                </h2>
+            </section>
+        </section>
+           
+        <div class="grid-con">
+            <section id="hero-summary" class="col-span-full line-separator">
+                <h2 class="hidden"> Rooms Styles Description</h2>
+                <p>All room Prices Include daily<br>5 Course Dinner and Breakfast.<br>All rooms accessed daily for outdoor <br>hot tub inspection.</p> 
+            </section>
+        </div>
+            
+        <nav id="room_list" >
+            <h2>All rooms have:</h2>              
+                <ul>
+                    <li> Exceeds 5 Diamond/Star Room Standards.</li>
+                    <li> Private Out Door Hot Tubs.</li>
+                    <li> Spacious Lakeside View.</li>
+                    <li> Walkout Balcony or Deck.</li>
+                    <li> King Size Beds.</li>
+                    <li> Fibre-Optic Internet - Free WIFI.</li>
+                    <li>Free - Netflix.</li>
+                    <li> European Shower (2 or more heads).</li>
+                    <li> 50 inch Television.</li>
+                    <li> Wood Burning Fireplace.</li>
+                    <li> 2 bath robes.</li>
+                    <li> Hair Dryer, cosmetic mirror.</li>
+                    <li> Irons/Ironing Boards.</li>
+                    <li> Keurig Coffee Maker with K-caps.</li>
+                    <li> Bar Fridge.</li>
+                    <li> Phones - Free long Distance.</li>
+                    <li> 2 Chaise Lounge Chairs - Spring, Summer, Fall.</li>
+                    <li>2 person Whirlpool Bath Tub.</li>
+                    <li> Safes.</li>
+                    <li> Alarm Clock.</li>
+                    <li> Drink - Tap Water - Algonquin Park Aquifer.</li>
+                </ul>
+             </nav>
+         <!-- Rooms Nav -->
+        <div id="why-choose-us">  
+            <div class="grid-con">
+                <nav id="chateaus-nav" class="col-span-full">
+                    <h2 class="hidden">Nav for Rooms Styles</h2>
+                    <ul>
+                        <li><a class="selected"href="#"> Chateaus</a></li>
+                        <li><a  href="#">Villas</a></li>
+                        <li><a href="#">Masters</a></li>
+                        <li><a href="#">Chalets</a></li>
+                        <li><a href="#">Exotics</a></li>
+                        <li><a href="#">Juniors</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <section id="chateaus-hero-con" class="grid-con">             
+                <div id="chateaus-heading-box" class="col-span-full">
+                    <h3 class="hero-img-h3"><span>Couples Resort</span><br> Chateaus </h3>
+                </div> 
+            </section>
+           
+            <div class="grid-con">
+                <div class="col-span-full line-separator"></div>
+                <div class="col-span-full image-con" >
+                    <p>
+                        Old European Boutique Chateaus and each with a Private Screened in Gazebo, 
+                        Walkout Balcony and Outdoor Hot Tub to soothe life's painsaway while enjoying views of spectacular scenery overlooking 
+                        sparkling Galeairy Lake onto the romantic forests of Algonquin Park.</p> 
+                        <p>Travel the World and one will quickly see that it does not get any better than this anywhere.</p>
+                        <p>In all 4 seasons, explore the stars from your private Outdoor Hot Tub located on your deck.</p>
+                        <p>Towering 16 foot vaulted ceiling and a massive 2 sided stone fireplace between the bedroom and living room.
+                         Furnished by Canada's finest furniture store The Art Shoppe of Toronto.</p>                 
+                </div>
+            </div>    
+                      <div>              
+                         <details>
+                                  <summary class="gallery">Chateau Photo's </summary>
+                                  <ul>
+                                  <li><img src="images/chateau_sec11.jpg" alt="chateau gallery_1"></li>
+                                    <li><img src="images/chateau_sec21.jpg" alt="chateau gallery_2"></li>
+                                        <li><img src="images/chateau_sec31.jpg" alt="chateau gallery_3"></li>
+                                            <li><img src="images/chateau_sec41.jpg" alt="chateau gallery_4"></li>
+                                  </ul>
+                         </details>  
+                     </div>
+                  <details class="special_list">
+                    <summary>Exclusive to Chateaus</summary>
+                       <ul>
+                        <li>FREE Soapstone products (Bath and Body) in your room on Arrival. ($60 Value)</li>
+                        <li>Keurig Machine ($0/Cap): K-caps (Teas, Coffees and Chocolates) for your choice.</li>
+                        <li>Illy Espresso / Americano Machine with Caps ($0/Cap).</li>
+                        <li>1400 sq feet</li>
+                        <li>Private Cabin with Outdoor Hot Tub on Deck</li>
+                        <li>2 TV's Living area and Bedroom</li>
+                        <li>Sauna</li>
+                        <li>Bathroom Make-up Vanity table</li>
+                        <li>Bathroom Double sink</li>
+                        <li>2 Person Shower, 4 Shower Head and Benches</li>
+                        <li>Steam Shower</li>
+                        <li>Microwave</li>
+                        <li>Bidet</li>
+                       </ul>
+                  </details>
+                  <br><br><br>
+             </div>
+
+
+             <section id="villas-hero-con" class="grid-con">             
+                <div id="villas-heading-box" class="col-span-full">
+                    <h3 class="hero-img-h3"><span>Couples Resort</span><br> Villas </h3>
+                </div> 
+            </section>
+           
+            <div class="grid-con">
+                <div class="col-span-full line-separator"></div>
+                <div class="col-span-full image-con" >
+                    <p>
+                        Old European Boutique Spa Villas and each with Private Screened in Gazebo with private Outdoor Hot Tub, nestled Lakeside.</p> 
+                        <p>Time to be Spoiled in a Gorgeous Romantic Private Cottage for two, a Boutique Spa Villa, with so many Water Indulgences 
+                            (Outdoor Hot Tub / In-Room Whirlpool Bath Tub / Sauna / Steam Room / 4 Shower Heads) to Spoil you. From your gazebo and sun 
+                            deck listen to the water's waves on the shores edge, watch the trees sway with the breeze and breath again.</p>
+                        <p>Unique in every Villa an Old European Boutique Style, Furnished by Toronto's "The Art Shoppe", Canada's finest furniture store.</p>
+                                     
+                </div>
+            </div>    
+                      <div>              
+                         <details>
+                                  <summary class="gallery">Villa Photo's </summary>
+                                  <ul>
+                                  <li><img src="images/villa_sec12.jpg" alt="villa gallery_1"></li>
+                                  <li><img src="images/villa_sec32.jpg" alt="villa gallery_3"></li>
+                                  <li><img src="images/villa_sec42.jpg" alt="villa gallery_4"></li>
+                                  <li><img src="images/villa_sec52.jpg" alt="villa gallery_5"></li>
+                                  <li><img src="images/villa_sec62.jpg" alt="villa gallery_6"></li>
+                                  </ul>
+                         </details>  
+                     </div>
+                  <details class="special_list">
+                    <summary>Exclusive to Villas</summary>
+                       <ul>
+                        <li>1000 sq feet</li>
+                        <li>Private Screened in Gazebo with Outdoor Hot Tub</li>
+                        <li>14 foot vaulted Pine ceiling</li>
+                        <li>Illy Espresso / Americano Machine with Caps.</li>
+                        <li>Sauna</li>
+                        <li>2 Person Shower, 4 Shower Head and Benches</li>
+                        <li>Steam Shower</li>
+                        <li>Microwave</li>
+                        <li>Bidet</li>
+                       </ul>
+                  </details>
+                  <br><br><br>
+             </div>
+
+     
+             <section id="masters-hero-con" class="grid-con">             
+                <div id="masters-heading-box" class="col-span-full">
+                    <h3 class="hero-img-h3"><span>Couples Resort</span><br> Masters </h3>
+                </div> 
+            </section>
+           
+            <div class="grid-con">
+                <div class="col-span-full line-separator"></div>
+                <div class="col-span-full image-con" >
+                    <p>
+                        Old European Lakeside Boutique Opulence for a Romance Getaway.
+                        Travel the World and one will quickly see that one does not find a better hotel room than this anywhere. </p> 
+                        <p>Come and breathe the freshest air, and let Algonquin Park titillate your senses as only she can. 
+                            Watch the World go by from the privacy of your own Outdoor HotTub.  This is a thrilling way to enjoy Algonquin Park in Muskoka. 
+                            Be prepared to be Spoiled in a Romantic  Master's Jr Suite that has so many features to Spoil you with so many 
+                            Water Indulgences (Whirlpool Bath Tub / Steam Room / 4 Shower Heads). </p>
+                        <p>Clean and fresh decor in a Boutique Old European style with furnishings from the finest furniture store in Canada, The art shoppe of Toronto</p>
+                                     
+                </div>
+            </div>    
+                      <div>              
+                         <details>
+                                  <summary class="gallery">Master Photo's </summary>
+                                  <ul>
+                                  <li><img src="images/master_sec13.jpg" alt="villa gallery_1"></li>
+                                  <li><img src="images/master_sec23.jpg" alt="villa gallery_2"></li>
+                                  <li><img src="images/master_sec33.jpg" alt="villa gallery_3"></li>
+                                  <li><img src="images/master_sec43.jpg" alt="villa gallery_4"></li>
+                                  <li><img src="images/master_sec53.jpg" alt="villa gallery_5"></li>
+                                  </ul>
+                         </details>  
+                     </div>
+                  <details class="special_list">
+                    <summary>Exclusive to Masters</summary>
+                       <ul>
+                        <li>1000 sq feet</li>
+                        <li>Private Out Door Hot Tub - on Balcony</li>
+                        <li>10 foot ceilings</li>
+                        <li>Heated bathroom floors</li>
+                        <li>Bathroom Double sink</li>
+                        <li>Bathroom Make-up Vanity table</li>
+                        <li>2 Person Shower, 4 Shower Head and Benches</li>
+                        <li>Microwave</li>
+                        <li>Steam Shower</li>
+                        <li>Separate Bidet / Toilet Area</li>
+                       </ul>
+                  </details>
+                  <details  class="special_list">
+                    <summary>Booking Options</summary>
+                    <ul>
+                        <li>MASTERS JR SUITE 2ND FLOOR</li>
+                        <li>MASTERS JR SUITE 3RD FLOOR</li>
+                    </ul>
+                  </details>
+                  <br><br><br>
+             </div>
+
+     
+
+            
+        <footer id="footer-hero" class="grid-con">        
+                <section id="footer-contact-info" class="col-span-full">
+                    <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                    <p>
+                        Toll Free:+1 877 201-1156<br>
+                        FAX:+1 613 638 2217<br>
+                        E-mail: info@coupleresort.com
+                    </p>
+                </section>
+                <div id="footer-privacy" class="col-span-full line-separator">
+                    <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                </div>
+        </footer>
+
+        <script src="js/main.js"></script>   
+    </body>
 </html>

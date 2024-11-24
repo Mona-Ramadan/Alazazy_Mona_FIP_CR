@@ -1,146 +1,344 @@
-/* Global Rules  ------------------------------------------------------------------------------------------------------------------------------- */
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
 
-.hidden {
-display: none;
-}
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer 
+ */
 
 
+ /* 1. ---General Styles--- */
 
-body,
-html {
-font-family: 'Josefin Slab';
-font-size: 15px;
-font-weight: bold;
-color: rgba(80, 80, 80, 1);
-line-height: 1;
-}
-
-#wrapper {
-width: 412px;
-padding: 0px;
-height: 8000px;
-margin: 0px auto;
-border-radius: 30px;
-border: 15px solid rgba(80, 80, 80, 1);
-}
-
-/* Header Rules -------------------------------------------------------------------------------------------------------------------------*/
-
-.menu-icon { 
-width: 30px;
-height: 23px; 
-display: flex; 
-flex-direction: column; 
-justify-content: space-between;
-cursor: pointer; 
-margin-left: 25px; 
-margin-top: 25px;
-}
-
-.line {
-height: 4px; 
-background-color: rgba(154, 32, 24, 1);
-} 
-    
-nav { 
-text-align: left;
-padding-left: 20px;
+ #mobile-outline {
+  max-width: 412px;
+  /* TRBL  */
+  margin: 20px auto 20px auto;
+  outline: 18px solid #333;
+  border-radius: 30px;
 } 
 
-nav ul { 
-list-style-type: none; 
-padding: 0; 
+body {
+  color: #626262;
+  font-family: 'Josefin Slab';
+  font-size: 15px;
+  font-weight: bold;
 }
 
-nav ul li { 
-padding: 12px 0; 
-border-bottom: 2px solid rgba(154, 32, 24, 1);
-width: 95%;
-} 
-      
-nav ul li a { 
-color: rgba(80, 80, 80, 1);
-text-decoration: none; 
-font-size: 20px; 
-font-weight:bolder;
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 
-#cr-style { 
-display: flex; 
-align-items: center; 
-justify-content: space-between;
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cr-red {
+  color: #9a2018;
+}
+
+
+/* 2. ---Main Nav--- */
+
+#main-nav label img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+#main-nav input, #burger-con {
+  display: none;
+}
+
+/*   ~ sibling selector   */
+
+#main-nav input:checked ~ #burger-con {
+display: block;
+}
+
+#main-nav input:checked ~ label img {
+  transform: rotate(90deg);
+}
+
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #626262;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+border-top: 1px solid#efefef;
+}
+#main-nav ul li:last-child {
+margin-bottom: 40px;
 }
 
 #logo {
-padding-left: 25px;
-width: 80px;
-padding-bottom: 25px;
+  margin-bottom: 20px;
+  max-width: 382px;
 }
 
-h1 {
-font-family: "Josefin Sans", sans-serif;
-font-size: 38px;
-padding-top: 10px;
-padding-right: 20px;
-padding-left: 15px;
+
+/* 3. ---Main Hero Image--- */
+
+#hero {
+  background: url(../images/rooms_hero.jpg) no-repeat;
+  height: 230px;
 }
 
-/* Main Header Rules -------------------------------------------------------------------------------------------------------------------------*/
+.book-now {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 23px;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+     /* add */
+  cursor: pointer;
+}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.book-now:hover {
+  background-color: rgb(196, 28, 28);
+}
+
+#book-now-hero {
+  height: 67px;
+}
+
+#hero-heading-box {
+  align-self: end;
+}
+
+#hero-heading-box h2 {
+  font-size: 20px;
+}
+
+.hero-img-h2, .hero-img-h3 {
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.hero-img-h2 span,  .hero-img-h3 span {
+  color: #9a2018;
+  font-size: 12px;
+}
+
+.line-separator {
+  margin-top: 20px;
+  border-top: solid 3px #CF6666;
+  padding-top: 20px;
+}
+
+#hero-summary p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 4. ---Main Hero Image Contact--- */
+
+
+#room_list h2 {
+  font-size: 18px;
+  padding-top: 8px;
+  padding-left:28px;
+}
+
+#room_list ul {
+  line-height: 1.7;
+}
+#room_list ul li {
+  font-size: 15px;
+}
+
+/* 5. ---Rooms List--- */
+
+
+#chateaus-nav {
+  padding-top: 20px;
+}
+
+#chateaus-nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+}
+#chateaus-nav ul li {
+  margin-bottom: 18px;
+}
+
+#chateaus-nav ul li a {
+ color: inherit;
+ padding: 5px;
+ padding-left: 10px;
+}
+
+#chateaus-nav ul li a:hover {
+  border-left: #9a2018 5px solid;
+}
+
+
+#chateaus-nav ul li a.selected {
+  border-left: #9a2018 5px solid;
+}
+
+
+
+#chateaus-hero-con {
+ background: url(../images/rooms_01.jpg) no-repeat;
+ height: 230px;
+}
+
+#chateaus-heading-box {
+  align-self: end;
+}
+
+#chateaus-heading-box h3 {
+font-size: 22px;
+}
+
+.image-con p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+details {
+ padding-left: 15px;
+ padding-top: 10px;
+ padding-right: 15px;
+}
+
+summary {
+  background-color: #F0EBEB;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
   
 }
 
-.image {
-padding-top: 0px;
-width:100%;
-height: 230px;
-}
-
-.book-now-button { 
-  height: 64px;
-  width: 180px;
-  background-color: rgba(154, 32, 24, 1); 
-  color: white;
-  font-family: 'Josefin Slab';
-  font-size: 30px; 
-  font-weight: bold; 
-  font-style: italic;
-  border: none; 
-  cursor: pointer; 
-
-  margin-top: -79px;
-	transform: translate(-12px, 124%);
+details img { 
+   padding: 20px;
   }
 
-.book-now-button:hover {
-  background-color: rgba(197, 66, 66, 1);
-}
+  details ul {
+    display: inline;
+  }
 
-.box { 
-  padding-top: -95px;
-  width: 200px;
-  background-color: white; 
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: left; 
-}
+  details ul li  {
+  list-style-type: none;
+  }
 
-.title-large {
-  font-size: 33px;
-  font-weight: bold;
-  font-family: 'Josefin Slab';
-  margin: 0px;
-  padding-left: 15px;
-}
-.title-small {
+  .special_list ul li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: #9a2018 solid 1px;
+  }
+
+
   
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  color: rgba(197, 66, 66, 1);
+#villas-hero-con {
+  background: url(../images/rooms_02.jpg) no-repeat;
+  height: 230px;
+ }
+ 
+ #villas-heading-box {
+   align-self: end;
+ }
+ 
+ #villas-heading-box h3 {
+ font-size: 24px;
+ }
+ 
+ #masters-hero-con {
+  background: url(../images/rooms_03.jpg) no-repeat;
+  height: 230px;
+ }
+ 
+ #masters-heading-box {
+   align-self: end;
+ }
+ 
+ #masters-heading-box h3 {
+ font-size: 24px;
+ }
+
+/* 6. ---About & FAQ--- */
+
+
+/* 7. ---Master Room--- */
+
+
+
+/* add */
+
+
+/* 8. ---Footer--- */
+
+#footer-hero {
+  background-image: url(../images/footer.jpg);
+ background-repeat: no-repeat;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 72px;
+}
+
+#footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+  margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+  font-size: 23px;
+}
+
+#footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 14px;
   font-weight: normal;
-  margin-bottom: 10px;
-  text-align: left; 
+}
+
+#price-policy {
+  font-weight: normal;
+  line-height: 2;
 }
