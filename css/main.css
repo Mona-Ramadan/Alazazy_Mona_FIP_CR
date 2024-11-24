@@ -3,8 +3,7 @@ Couples Resort Responsive Build
 4 column grid as per XD file
  */
 
-/* 
-    CSS Guide 
+/*    CSS Guide 
 
     1.  General Styles
     2.  Main Nav
@@ -13,16 +12,14 @@ Couples Resort Responsive Build
     5.  Why Couples Resort
     6.  About & FAQ
     7.  Contact Form
-    8.  Footer 
- */
+    8.  Footer                    */
 
 
  /* 1. ---General Styles--- */
 
  #mobile-outline {
   max-width: 412px;
-  /* TRBL  */
-  margin: 20px auto 20px auto;
+  margin: 20px auto 20px auto;    /* TRBL  */
   outline: 18px solid #333;
   border-radius: 30px;
 } 
@@ -49,7 +46,6 @@ input, textarea {
   color: #9a2018;
 }
 
-
 /* 2. ---Main Nav--- */
 
 #main-nav label img {
@@ -61,12 +57,9 @@ input, textarea {
   transition: all 0.5s ease;
 }
 
-
 #main-nav input, #burger-con {
   display: none;
 }
-
-/*   ~ sibling selector   */
 
 #main-nav input:checked ~ #burger-con {
 display: block;
@@ -75,7 +68,6 @@ display: block;
 #main-nav input:checked ~ label img {
   transform: rotate(90deg);
 }
-
 
 #main-nav ul {
   list-style: none;
@@ -97,6 +89,7 @@ display: block;
 #main-nav ul li:first-child {
 border-top: 1px solid#efefef;
 }
+
 #main-nav ul li:last-child {
 margin-bottom: 40px;
 }
@@ -105,7 +98,6 @@ margin-bottom: 40px;
   margin-bottom: 20px;
   max-width: 382px;
 }
-
 
 /* 3. ---Main Hero Image--- */
 
@@ -169,7 +161,6 @@ margin-bottom: 40px;
 
 /* 4. ---Main Hero Image Contact--- */
 
-
 #room_list h2 {
   font-size: 18px;
   padding-top: 8px;
@@ -179,12 +170,12 @@ margin-bottom: 40px;
 #room_list ul {
   line-height: 1.7;
 }
+
 #room_list ul li {
   font-size: 15px;
 }
 
 /* 5. ---Rooms List--- */
-
 
 #chateaus-nav {
   padding-top: 20px;
@@ -195,6 +186,7 @@ margin-bottom: 40px;
   margin: 0;
   padding-left: 10px;
 }
+
 #chateaus-nav ul li {
   margin-bottom: 18px;
 }
@@ -209,12 +201,9 @@ margin-bottom: 40px;
   border-left: #9a2018 5px solid;
 }
 
-
 #chateaus-nav ul li a.selected {
   border-left: #9a2018 5px solid;
 }
-
-
 
 #chateaus-hero-con {
  background: url(../images/rooms_01.jpg) no-repeat;
@@ -247,7 +236,6 @@ summary {
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
-  
 }
 
 details img { 
@@ -268,8 +256,6 @@ details img {
     border-bottom: #9a2018 solid 1px;
   }
 
-
-  
 #villas-hero-con {
   background: url(../images/rooms_02.jpg) no-repeat;
   height: 230px;
@@ -309,7 +295,6 @@ details img {
  font-size: 24px;
  }
 
-
  #chalets-hero-con {
   background: url(../images/rooms_05.jpg) no-repeat;
   height: 230px;
@@ -322,7 +307,6 @@ details img {
  #chalets-heading-box h3 {
  font-size: 24px;
  }
-
 
  #juniors-hero-con {
   background: url(../images/rooms_05.jpg) no-repeat;
@@ -337,16 +321,6 @@ details img {
  font-size: 24px;
  }
 
-/* 6. ---About & FAQ--- */
-
-
-/* 7. ---Master Room--- */
-
-
-
-/* add */
-
-
 /* 8. ---Footer--- */
 
 #footer-hero {
@@ -355,7 +329,7 @@ details img {
   color: #fff;
   font-size: 12px;
   margin-top: 40px;
-  padding-bottom: 72px;
+  padding-bottom: 60px;
 }
 
 #footer-hero h3 {
@@ -368,10 +342,6 @@ details img {
   margin-top: 0px;
 }
 
-#footer-contact-info h3 {
-  font-size: 23px;
-}
-
 #footer-contact-info p {
   margin-bottom: 20px;
   line-height: 20px;
@@ -382,4 +352,5 @@ details img {
 #price-policy {
   font-weight: normal;
   line-height: 2;
+  font-size: 13px;
 }
