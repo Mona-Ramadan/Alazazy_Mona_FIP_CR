@@ -9,10 +9,14 @@ Couples Resort Responsive Build
     2.  Main Nav
     3.  Main Hero Image
     4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer                    */
+    5.  Rooms Nav
+    6.  Chateaus Room
+    7.  Villas Room
+    8.  Masters Room
+    9.  Exotics Room
+    10.Chalets Room
+    11.Juniors Room
+    12. Footer                    */
 
 
  /* 1. ---General Styles--- */
@@ -175,7 +179,7 @@ margin-bottom: 40px;
   font-size: 15px;
 }
 
-/* 5. ---Rooms List--- */
+/* 5. ---Rooms Nav--- */
 
 #chateaus-nav {
   padding-top: 20px;
@@ -204,6 +208,8 @@ margin-bottom: 40px;
 #chateaus-nav ul li a.selected {
   border-left: #9a2018 5px solid;
 }
+
+/* 6. ------Chateaus Room----- */
 
 #chateaus-hero-con {
  background: url(../images/rooms_01.jpg) no-repeat;
@@ -256,6 +262,8 @@ details img {
     border-bottom: #9a2018 solid 1px;
   }
 
+/* 7. ------Villas Room----- */
+
 #villas-hero-con {
   background: url(../images/rooms_02.jpg) no-repeat;
   height: 230px;
@@ -269,6 +277,8 @@ details img {
  font-size: 24px;
  }
  
+/* 8. ------Masters Room----- */
+
  #masters-hero-con {
   background: url(../images/rooms_03.jpg) no-repeat;
   height: 230px;
@@ -281,6 +291,8 @@ details img {
  #masters-heading-box h3 {
  font-size: 24px;
  }
+
+/* 9. ------Exotics Room----- */
 
  #exotics-hero-con {
   background: url(../images/rooms_04.jpg) no-repeat;
@@ -295,6 +307,8 @@ details img {
  font-size: 24px;
  }
 
+ /* 10. ------Chalets Room----- */
+
  #chalets-hero-con {
   background: url(../images/rooms_05.jpg) no-repeat;
   height: 230px;
@@ -307,6 +321,8 @@ details img {
  #chalets-heading-box h3 {
  font-size: 24px;
  }
+
+/* 11. ------Juniors Room----- */
 
  #juniors-hero-con {
   background: url(../images/rooms_05.jpg) no-repeat;
@@ -321,7 +337,7 @@ details img {
  font-size: 24px;
  }
 
-/* 8. ---Footer--- */
+/* 12. ---Footer--- */
 
 #footer-hero {
   background-image: url(../images/footer.jpg);
