@@ -16,7 +16,7 @@ Couples Resort Responsive Build
     9.  Exotics Room
     10.Chalets Room
     11.Juniors Room
-    12. Footer                    */
+    12. Footer                */
 
 
  /* 1. ---General Styles--- */
@@ -171,12 +171,9 @@ margin-bottom: 40px;
   padding-left:28px;
 }
 
-#room_list ul {
-  line-height: 1.7;
-}
-
 #room_list ul li {
   font-size: 15px;
+  line-height: 1.7;
 }
 
 /* 5. ---Rooms Nav--- */
@@ -369,4 +366,78 @@ details img {
   font-weight: normal;
   line-height: 2;
   font-size: 13px;
+}
+
+/* Algonquin_park_Rules*/
+
+/* 13. -----Main Hero Image------*/
+
+#hero_park {
+  background: url(../images/A.park_Hero.jpg) no-repeat;
+  height: 230px;
+}
+
+.p-summary p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.p-summary span {
+   color: #9a2018;
+}
+
+/*----Park Activities----*/
+#activities-heading-box {
+  align-self: end;
+}
+
+#activities-heading-box h2 {
+font-size: 20px;
+}
+
+#activities-img {
+  background: url(../images/A.park_01.jpg) no-repeat;
+  height: 230px;
+}
+
+#park-list ul {
+  font-size: 15px;
+  line-height: 1.7;
+  display: inline;
+}
+
+#park-list {
+  padding-left: 15px;
+  padding-bottom: 22px;
+}
+
+/*--- Fishing-----*/
+
+#fishing-img {
+  background: url(../images/A.park_02.jpg) no-repeat;
+  height: 230px;
+}
+
+#fishing-heading-box {
+  align-self: end;
+}
+
+#fishing-heading-box h2 {
+  font-size: 24px;
+}
+
+/*--------*/
+#lake-img {
+  background: url(../images/A.park_03.jpg) no-repeat;
+  height: 230px;
+}
+
+#lake-heading-box {
+  align-self: end;
+}
+
+#lake-heading-box h2 {
+  font-size: 20px;
 }
