@@ -235,7 +235,7 @@ details {
 }
 
 summary {
-  background-color: #F0EBEB;
+  background-color: #EFEFEF;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -346,8 +346,9 @@ details img {
 }
 
 #footer-hero h3 {
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 30px;
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
