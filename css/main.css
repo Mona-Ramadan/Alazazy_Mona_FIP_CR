@@ -16,7 +16,9 @@ Couples Resort Responsive Build
     9.  Exotics Room
     10.Chalets Room
     11.Juniors Room
-    12. Footer                */
+    12. Footer   
+    13. Algonquin_park_Rules  
+    14. Contact_Rules                 */
 
 
  /* 1. ---General Styles--- */
@@ -375,9 +377,9 @@ details img {
   font-size: 13px;
 }
 
-/* Algonquin_park_Rules*/
+/* 13. ----Algonquin_park_Rules------*/
 
-/* 13. -----Main Hero Image------*/
+/*  -----Main Hero Image------*/
 
 #hero_park {
   background: url(../images/A.park_Hero.jpg) no-repeat;
@@ -449,7 +451,7 @@ font-size: 20px;
   font-size: 20px;
 }
 
-/* ---Contact---*/
+/* 14.---Contact_Rules---*/
 #hero_contact {
   background: url(../images/contact_hero.jpg) no-repeat;
   height: 230px;
