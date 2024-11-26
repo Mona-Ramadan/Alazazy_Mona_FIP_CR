@@ -241,6 +241,12 @@ summary {
   cursor: pointer;
 }
 
+.decorated-heading::after {
+  content: "\2618";     
+  color: rgb(4, 129, 23);
+  margin-left: 5px;
+}
+
 details img { 
    padding: 20px;
   }
@@ -346,7 +352,7 @@ details img {
 }
 
 #footer-hero h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 30px;
   font-size: 24px;
   margin-bottom: 16px;
@@ -442,3 +448,69 @@ font-size: 20px;
 #lake-heading-box h2 {
   font-size: 20px;
 }
+
+/* ---Contact---*/
+#hero_contact {
+  background: url(../images/contact_hero.jpg) no-repeat;
+  height: 230px;
+}
+
+#contact-heading-box {
+  align-self: end;
+}
+
+#contact-heading-box h2 {
+  font-size: 24px;
+}
+
+.p-summary h3 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.map-img { 
+    width: 100%; 
+    height: 280px; 
+  }
+
+#address-form {
+  margin: 0px;
+   } 
+   
+   #address-form input { 
+    font-family: 'Josefin Slab';
+    background-color: #F1F1F1;
+    width: 65%;
+   padding: 5px; 
+    border: 3px solid #D2CFCF;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+     font-size: 14px;
+     }
+
+     #address-form input[type="submit"] {
+      padding: 10px;
+      background-color: #9a2018;
+      color: #fff;
+      border: none;
+      width: 120px;
+      align-self: flex-end; /* make it in left corner*/
+     }
+
+     #address-form input[type="submit"]:hover {
+      background-color: #C54242;
+      transition: all 200ms ease-in;
+      border-radius: 5px; 
+   }
+
+   .rec-info {
+    width: 390px;
+    background-color: #F1F1F1;  
+    padding: 10px 20px; 
+    padding-bottom: 10px;
+    font-family: 'Josefin Slab';
+     font-size: 15px; 
+      color: #333; 
+   }
+
+  
