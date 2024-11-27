@@ -2,13 +2,17 @@
 
 # Project Name
 
-## **Final Integrated Project**
+### **Final Integrated Project**
 
- # Create three mobile pages and one in desktop size for the Couples Resort website :
+ ## Create three mobile pages and one in desktop size for the Couples Resort website :
  *- Room Styles.*
+
  *- About_Algonquin_Park.*
- *- Contact* 
- *- Valentine Day desktop page*
+
+ *- Contact.* 
+
+ *- Valentine Day desktop page.*
+ 
 
 # Usage
 
