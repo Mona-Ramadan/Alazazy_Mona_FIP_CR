@@ -26,4 +26,3 @@ You can use in any browser
 
 MIT License
 
-![alt text](C:\Users\Mona\OneDrive - Fanshawec.ca\Mona\MMED-1051 Design & Image 1)
