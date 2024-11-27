@@ -26,8 +26,9 @@ You can use in any browser
 
 MIT License
 
-![CR_(Rooms)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/41913fa5-d634-40ed-bc14-7b4575e3f129)
+![CR_(Rooms)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/d6dc2026-5a4f-4690-80f6-7570650c0506)
 
-![CR_(Algonquin-Park)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/be32032f-032e-4ffb-a919-fff266e79605)
+![CR_(Algonquin-Park)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/1f497174-5b98-40c8-b598-8e777a096317)
 
-![CR_(Contact)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/aae43875-2046-44cf-870b-b1d3aac00af9)
+![CR_(Contact)_Wireframe_412px(mobile)@3x](https://github.com/user-attachments/assets/f6186e82-5e01-48e7-a47b-5d9435af4600)
+
