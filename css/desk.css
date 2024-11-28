@@ -1,0 +1,193 @@
+/* General Rules*/
+
+#mobile-outline {
+    max-width: 1200px;
+    margin: 0px auto 20px auto;    /* TRBL  */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #62626252;
+    height: auto;
+  } 
+  
+  body {
+    color: #626262;
+    font-family: 'Josefin Slab';
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cr-red {
+    color: #9a2018;
+  }
+
+  /*--- Main Navigation---*/
+
+#logo {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#main-nav {
+    margin-right: 25px;
+}
+
+#main-nav ul {
+    list-style-type: none; 
+    text-align: center;
+  }
+  
+  #main-nav ul li a {
+    display:block;
+    padding: 15px 15px;
+    text-align: center;
+    color: #626262;
+  }
+  
+  #main-nav ul li {
+    display: inline-block;
+  }
+  
+  #main-nav ul li:first-child {
+    border-left: 3px solid#626262;
+    }
+
+.book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 24px;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+    height: 86px;
+}
+      
+.book-now:hover {
+    background-color: rgb(196, 28, 28);
+}
+
+#hero-img {
+    background: url(../images/desk_val_hero1.jpg) no-repeat;
+    height: 450px;
+  }
+  
+  
+#hero-heading-box {
+    align-self: end;
+    margin-left: 40px;
+  }
+
+  .hero-img-h2 {
+    background: #fff;
+    padding: 15px 30px;
+    font-size: 32px;
+  }
+  
+  .hero-img-h2 span {
+    color: #9a2018;
+    font-size: 20px;
+  }
+  
+  
+.line-separator {
+    margin-top: 26px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+    margin-left: 40px;
+  }
+  
+.summary-hero p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-right: 20px;
+  }
+h1 {
+    font-family: "Beau Rivage", cursive;
+    color: #C54242;
+    font-size: 90px;
+    padding-left: 66px;
+    font-weight: normal;
+}
+
+.image-1 { 
+    width: 320px;
+    height: 530px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+ }
+
+ .image-2 { 
+    width: 320px;
+    height: 530px;
+    border-radius: 10px;
+ }
+
+ #packages-img {
+    margin-top: 35px;
+    background: url(../images/desk_val_sec_022.jpg) no-repeat;
+    height: 450px;
+  }
+  
+  
+#packages-heading-box {
+    align-self: end;
+  }
+
+  h3 {
+   margin-left: 5px;
+    padding-top: 30px;
+    font-size: 50px;
+    color:#C54242;
+  }
+
+  .summary-pack  {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-right: 20px;
+  }
+  .image-3 {
+    width: 360px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+  }
+
+  h4 {
+     padding-top: 10px;
+     font-size: 22px;
+     color:#C54242;
+     text-align: center;
+   }
+
+   .summary-hero a {
+    color:#C54242;
+   }
+
+   .container-1 {
+      width: 350px;
+      background-color: #FFFEFC ;
+      border-bottom: 1px solid #CF6666 ;
+      border-left: 1px solid #CF6666 ;
+      border-right: 1px solid #CF6666 ;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      padding: 10px  ;
+   }
