@@ -115,7 +115,7 @@ margin-bottom: 40px;
 .book-now {
   background-color: #9a2018;
   color: #fff;
-  font-size: 23px;
+  font-size: 24px;
   transition: background-color 500ms linear;
   display: flex;
   justify-content: center;
@@ -123,6 +123,7 @@ margin-bottom: 40px;
   font-style: italic;
      /* add */
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .book-now:hover {
@@ -471,8 +472,15 @@ font-size: 20px;
 }
 
 .map-img { 
-    width: 100%; 
+    width: 412px; 
     height: 280px; 
+  }
+
+  .map-img iframe {
+  width: 412px;
+  height: 280px; 
+  margin-right: 30px; 
+  margin-left: -18px;
   }
 
 #address-form {
